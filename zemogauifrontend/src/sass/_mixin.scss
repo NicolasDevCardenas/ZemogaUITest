@@ -1,0 +1,18 @@
+@mixin flex {
+  display: flex;
+}
+@mixin reset-marginx {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+@mixin items-center {
+  align-items: center;
+  display: flex;
+}
+@mixin col($col1, $col2) {
+  display: grid;
+  grid-template-columns: $col1 $col2;
+}
+@mixin z-index($index) {
+  z-index: $index;
+}

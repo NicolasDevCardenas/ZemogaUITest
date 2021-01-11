@@ -1,0 +1,104 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 768px) {
+  nav {
+    ul {
+      @include flex;
+      margin-left: auto;
+      @include reset-marginx;
+    }
+    li {
+      padding: 0 15px;
+      @include items-center;
+    }
+  }
+  .burger-menu {
+    display: none;
+    margin-right: auto;
+  }
+  .menu {
+    .exit {
+      display: none;
+    }
+  }
+  .bg-gray {
+    @include col(25%, 75%);
+  }
+  footer {
+    .mr-auto {
+      margin-right: auto;
+    }
+  }
+  .col-6-box {
+    @include col(50%, 50%);
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .vote-box {
+    padding: 0 15px;
+    .text-vote-box {
+      padding-right: 15px;
+    }
+  }
+  .new-name {
+    .col-8 {
+      @include col(80%, 20%);
+    }
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    nav {
+      display: block;
+    }
+  }
+  .vote-box {
+    margin: 10px 0;
+  }
+  .menu {
+    position: fixed;
+    background-color: gray;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    color: $white;
+
+    &.show {
+      transform: translateY(0);
+      transition: 1s ease-in-out;
+    }
+    &.hide {
+      transform: translateY(-120vh);
+      transition: 0.5s ease-in-out;
+    }
+    .exit {
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 15px;
+    }
+    a {
+      font-size: 30px;
+    }
+  }
+  .burger-menu {
+    margin-left: auto;
+  }
+  .col-6 {
+    @include col(100%, 0);
+  }
+  .loupe {
+    padding-top: 10px;
+  }
+  .new-name {
+    .btn-submit {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+}

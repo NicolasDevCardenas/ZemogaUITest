@@ -1,0 +1,241 @@
+@import "_mixin.scss";
+@import "_variables.scss";
+@font-face {
+  font-family: "Lato";
+  src: url("/assets/fonts/Lato-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato";
+}
+a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+.items-center {
+  @include items-center;
+}
+.d-flex {
+  @include flex;
+}
+.text-center {
+  text-align: center;
+}
+.info-vote {
+  @include flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  .state {
+    width: 30%;
+    font-size: 12px;
+    padding: 5px;
+    background-color: #8e8b8b8f;
+    color: $white;
+    @include flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .countdown {
+    width: 70%;
+    padding: 8px;
+    background-color: #d5d3d3ad;
+    span {
+      font-size: 30px;
+    }
+  }
+}
+.banner {
+  height: 100vh;
+}
+.thump {
+  width: 50%;
+  padding: 20px 0;
+  text-align: center;
+  &.up,
+  &.down {
+    background-color: $thumpup;
+    &.box {
+      width: auto;
+      padding: 5px;
+      display: inline-table;
+      &.mt-16 {
+        margin-top: 16px;
+      }
+      &.vote {
+        border: 2px solid white;
+      }
+      img {
+        width: 20px;
+      }
+    }
+  }
+  &.down {
+    background-color: $thumpdown;
+  }
+}
+.percentage {
+  .thumpup-percent {
+    background-color: #13ceac7a;
+    width: 50%;
+    padding: 10px;
+  }
+  .thumpdown-percent {
+    background-color: #ffb30082;
+    width: 50%;
+    padding: 10px;
+  }
+}
+.background-home {
+  width: 100%;
+  height: 110vh;
+  max-height: 1024px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/assets/img/PAPA.png");
+}
+.title {
+  font-size: 45px;
+  margin: 0;
+}
+.text-25 {
+  font-size: 25px;
+}
+.text-bold {
+  font-size: 18px;
+}
+.vote-box {
+  position: relative;
+  .text-vote-box {
+    position: absolute;
+    bottom: 4px;
+    color: $white;
+  }
+}
+.bg-gray {
+  background-color: $gray;
+  padding: 30px;
+  .text-msg {
+    display: block;
+    padding-right: 40px;
+  }
+  img {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
+}
+.btn-vote {
+  border: 1px solid $white;
+  padding: 8px 15px;
+}
+.new-name {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/assets/img/submit.png");
+  padding: 10px;
+  margin: 50px 0;
+  .col-8 {
+    span {
+      font-size: 30px;
+    }
+  }
+  .btn-submit {
+    border: 2px solid black;
+    padding: 10px;
+    color: black;
+    background-color: transparent;
+    font-size: 20px;
+  }
+}
+.dotted {
+  border-top: 3px dotted #c6c6c6;
+  border-bottom: 0;
+}
+footer {
+  nav {
+    color: #4d4d4d;
+    ul {
+      margin-left: 0;
+      padding: 0;
+    }
+  }
+}
+
+.m-0 {
+  margin: 0;
+}
+.mr-5 {
+  margin-right: 10px;
+}
+.pr-5 {
+  padding-right: 10px;
+}
+.pb-40 {
+  padding-bottom: 40px;
+}
+.px-10 {
+  padding: 0 10px;
+}
+.pl-0 {
+  padding-left: 0;
+}
+.py-40 {
+  padding: 40px 0;
+}
+.padding-box {
+  color: $white;
+  padding: 20px 30px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/assets/img/blur.png");
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.col-6 {
+  @include col(50%, 0);
+}
+.thin {
+  font-weight: lighter;
+}
+nav {
+  padding: $paddingNav 0;
+  @include flex;
+  ul {
+    list-style: none;
+    @include reset-marginx;
+  }
+  .loupe {
+    width: 25px;
+  }
+  &.white {
+    color: $white;
+  }
+  &.black {
+    color: #4d4d4d;
+  }
+}
+section {
+  display: block;
+}
+
+h1 {
+  @include reset-marginx;
+}
+@import "_media.scss";
