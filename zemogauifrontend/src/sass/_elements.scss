@@ -65,7 +65,7 @@ a {
       &.mt-16 {
         margin-top: 16px;
       }
-      &.vote {
+      &.select {
         border: 2px solid white;
       }
       img {
@@ -87,6 +87,7 @@ a {
     background-color: #ffb30082;
     width: 50%;
     padding: 10px;
+    justify-content: flex-end;
   }
 }
 .background-home {
@@ -119,6 +120,7 @@ a {
     position: absolute;
     bottom: 4px;
     color: $white;
+    width: 100%;
   }
 }
 .bg-gray {
@@ -137,6 +139,9 @@ a {
 .btn-vote {
   border: 1px solid $white;
   padding: 8px 15px;
+  &.again {
+    width: 110px;
+  }
 }
 .new-name {
   background-position: center center;

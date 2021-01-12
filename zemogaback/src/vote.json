@@ -1,0 +1,34 @@
+[
+    {
+        "id": "1",
+        "name": "Kanye West",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, laborum excepturi mollitia voluptas, explicabo voluptatem ullam alias, vitae distinctio illum obcaecati soluta. Explicabo deleniti, tenetur possimus quia culpa odit nulla.",
+        "likes": 14,
+        "dislikes": 21,
+        "img": "kanye"
+    },
+    {
+        "id": "2",
+        "name": "Mark Zuckerberg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, laborum excepturi mollitia voluptas, explicabo voluptatem ullam alias, vitae distinctio illum obcaecati soluta. Explicabo deleniti, tenetur possimus quia culpa odit nulla.",
+        "likes": 18,
+        "dislikes": 13,
+        "img": "mark"
+    },
+    {
+        "id": "3",
+        "name": "Cristina Fernández de Kirchner",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, laborum excepturi mollitia voluptas, explicabo voluptatem ullam alias, vitae distinctio illum obcaecati soluta. Explicabo deleniti, tenetur possimus quia culpa odit nulla.",
+        "likes": 18,
+        "dislikes": 13,
+        "img": "cristina"
+    },
+    {
+        "id": "3",
+        "name": "Malala Yousafzai",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, laborum excepturi mollitia voluptas, explicabo voluptatem ullam alias, vitae distinctio illum obcaecati soluta. Explicabo deleniti, tenetur possimus quia culpa odit nulla.",
+        "likes": 18,
+        "dislikes": 13,
+        "img": "Malala"
+    }
+]
