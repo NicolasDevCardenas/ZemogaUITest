@@ -21,11 +21,11 @@ app.get('/vote', (req, res) => {
     res.json(votes);
 });
 app.post('/vote', (req, res) => {
-    const { name, description, likes, dislikes } = req.body;
+    const { name, description, img, tag } = req.body;
 
-    if (name && description && likes && dislikes) {
+    if (name && description && img, tag) {
         const id = uuidv4();
-        const newVote = { ...req.body, id }
+        const newVote = { ...req.body, id, likes: 0, dislikes: 0, important: false }
         votes.push(newVote);
         const json_votes = JSON.stringify(votes);
         fs.writeFileSync('src/vote.json', json_votes, 'utf-8');
@@ -40,6 +40,10 @@ app.post('/vote', (req, res) => {
         })
 
     }
+});
+app.get('/important', (req, res) => {
+    const important = votes.find(element => element.important === true);
+    res.json(important);
 });
 
 app.post('/thump', (req, res) => {
@@ -56,13 +60,18 @@ app.post('/thump', (req, res) => {
                 code: 0,
                 msg: "Success"
             })
-        } else {
+        } else if (thump === "1") {
             votes[index].dislikes = parseInt(dislikes) + 1;
             const json_votes = JSON.stringify(votes);
             fs.writeFileSync('src/vote.json', json_votes, 'utf-8');
             res.json({
                 code: 0,
                 msg: "Success"
+            })
+        } else {
+            res.json({
+                code: 1,
+                msg: "Error"
             })
         }
     } else {

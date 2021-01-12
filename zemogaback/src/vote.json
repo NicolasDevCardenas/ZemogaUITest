@@ -3,32 +3,55 @@
         "id": "1",
         "name": "Kanye West",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, laborum excepturi mollitia voluptas, explicabo voluptatem ullam alias, vitae distinctio illum obcaecati soluta. Explicabo deleniti, tenetur possimus quia culpa odit nulla.",
-        "likes": 14,
-        "dislikes": 21,
-        "img": "kanye"
+        "likes": 24,
+        "dislikes": 25,
+        "img": "kanye",
+        "important": false,
+        "wiki": "https://es.wikipedia.org/wiki/Kanye_West",
+        "tag": "Entertainment"
     },
     {
         "id": "2",
         "name": "Mark Zuckerberg",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, laborum excepturi mollitia voluptas, explicabo voluptatem ullam alias, vitae distinctio illum obcaecati soluta. Explicabo deleniti, tenetur possimus quia culpa odit nulla.",
         "likes": 18,
-        "dislikes": 13,
-        "img": "mark"
+        "dislikes": 14,
+        "img": "mark",
+        "important": false,
+        "wiki": "https://es.wikipedia.org/wiki/Mark_Zuckerberg",
+        "tag": "Business"
     },
     {
         "id": "3",
         "name": "Cristina Fernández de Kirchner",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, laborum excepturi mollitia voluptas, explicabo voluptatem ullam alias, vitae distinctio illum obcaecati soluta. Explicabo deleniti, tenetur possimus quia culpa odit nulla.",
         "likes": 18,
-        "dislikes": 13,
-        "img": "cristina"
+        "dislikes": 18,
+        "img": "cristina",
+        "important": false,
+        "wiki": "https: //es.wikipedia.org/wiki/Cristina_Fern%C3%A1ndez_de_Kirchner",
+        "tag": "Politics"
     },
     {
-        "id": "3",
+        "id": "4",
         "name": "Malala Yousafzai",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, laborum excepturi mollitia voluptas, explicabo voluptatem ullam alias, vitae distinctio illum obcaecati soluta. Explicabo deleniti, tenetur possimus quia culpa odit nulla.",
         "likes": 18,
         "dislikes": 13,
-        "img": "Malala"
+        "img": "Malala",
+        "important": false,
+        "wiki": "https://es.wikipedia.org/wiki/Malala_Yousafzai",
+        "tag": "Entertainment"
+    },
+    {
+        "id": "5",
+        "name": "Pope Francis",
+        "description": "He's talking tough on clergy sexual abuse, but he is another papal pervert protector? (thumbs down) or a true pedophile punishing pontiff (thumps up)",
+        "likes": 22,
+        "dislikes": 13,
+        "img": "PAPA",
+        "important": true,
+        "wiki": "https://es.wikipedia.org/wiki/Francisco_(papa)",
+        "tag": "Religion"
     }
 ]

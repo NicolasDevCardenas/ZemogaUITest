@@ -2,9 +2,6 @@ import React from "react";
 import "../sass/App.scss";
 
 const NewName = () => {
-  const submit = (e) => {
-    e.preventDefault();
-  };
   return (
     <div className="new-name">
       <div className="col-8">
@@ -12,9 +9,9 @@ const NewName = () => {
           <span>Is there anyone else you would want us to add?</span>
         </div>
         <div>
-          <button className="btn-submit" onClick={submit}>
+          <a className="btn btn-submit" href="/NewPerson">
             Submit a Name
-          </button>
+          </a>
         </div>
       </div>
     </div>

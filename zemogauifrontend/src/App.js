@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import PastTrials from "./components/PastTrials";
 import How from "./components/How";
 import Auth from "./components/Auth";
+import NewPerson from "./components/NewPerson";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route exact path="/pastrials" component={PastTrials} />
       <Route exact path="/how" component={How} />
       <Route exact path="/Auth" component={Auth} />
+      <Route exact path="/NewPerson" component={NewPerson} />
     </Router>
   );
 }

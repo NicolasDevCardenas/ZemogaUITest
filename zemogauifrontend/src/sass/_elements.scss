@@ -24,6 +24,17 @@ a {
 .text-center {
   text-align: center;
 }
+.btn {
+  cursor: pointer;
+}
+.wiki {
+  width: 15px;
+}
+.form-person {
+  label {
+    display: block;
+  }
+}
 .info-vote {
   @include flex;
   position: absolute;
@@ -148,7 +159,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("/assets/img/submit.png");
-  padding: 10px;
+  padding: 25px;
   margin: 50px 0;
   .col-8 {
     span {
@@ -166,6 +177,26 @@ a {
 .dotted {
   border-top: 3px dotted #c6c6c6;
   border-bottom: 0;
+}
+.new-person {
+  .col-6 {
+    justify-content: center;
+  }
+  .form-label {
+    padding: 10px 0;
+  }
+  input,
+  textarea {
+    border-radius: 5px;
+    border: 1px solid;
+    width: 100%;
+  }
+  input {
+    height: 25px;
+  }
+  .btn-form {
+    margin: 10px 0;
+  }
 }
 footer {
   nav {
